@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contadorAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/sum1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/resetAll"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/contador2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/sum1"
+        app:layout_constraintTop_toBottomOf="@+id/resetAll" />
+
+    <TextView
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/contador3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/sum2"
+        app:layout_constraintTop_toBottomOf="@+id/contador1" />
+
+    <TextView
+        android:id="@+id/contador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/contador4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/sum3"
+        app:layout_constraintTop_toBottomOf="@+id/contador2" />
+
+    <TextView
+        android:id="@+id/contador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/sum4"
+        app:layout_constraintTop_toBottomOf="@+id/contador3" />
+
+
+
+    <Button
+        android:id="@+id/resetAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET ALL"
+        app:layout_constraintBottom_toTopOf="@+id/reset1"
+        app:layout_constraintLeft_toRightOf="@id/contadorAll"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@+id/reset2"
+        app:layout_constraintLeft_toRightOf="@id/sum1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetAll"/>
+
+    <Button
+        android:id="@+id/sum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@+id/sum2"
+        app:layout_constraintLeft_toRightOf="@+id/contador1"
+        app:layout_constraintRight_toLeftOf="@+id/reset1"
+        app:layout_constraintTop_toBottomOf="@+id/resetAll"/>
+
+    <Button
+        android:id="@+id/reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@+id/reset3"
+        app:layout_constraintLeft_toRightOf="@id/sum2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset1"/>
+
+    <Button
+        android:id="@+id/sum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@+id/sum3"
+        app:layout_constraintLeft_toRightOf="@+id/contador2"
+        app:layout_constraintRight_toLeftOf="@+id/reset2"
+        app:layout_constraintTop_toBottomOf="@+id/sum1"/>
+
+    <Button
+        android:id="@+id/reset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@+id/reset4"
+        app:layout_constraintLeft_toRightOf="@id/sum3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset2"/>
+
+    <Button
+        android:id="@+id/sum3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@+id/sum4"
+        app:layout_constraintLeft_toRightOf="@+id/contador3"
+        app:layout_constraintRight_toLeftOf="@+id/reset3"
+        app:layout_constraintTop_toBottomOf="@+id/sum2"/>
+
+    <Button
+        android:id="@+id/reset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/sum4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset3"/>
+
+    <Button
+        android:id="@+id/sum4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/contador4"
+        app:layout_constraintRight_toLeftOf="@+id/reset4"
+        app:layout_constraintTop_toBottomOf="@+id/sum3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
