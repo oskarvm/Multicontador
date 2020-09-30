@@ -9,6 +9,7 @@ import com.example.multicontador.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    // coontadores
     int contador1;
     int contador2;
     int contador3;
